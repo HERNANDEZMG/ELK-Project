@@ -36,14 +36,14 @@ Filebeat watches for log files/locations and collects log events.
 Metricbeat records metric and statistical data from the operating system and from services running on the server.
 
 The configuration details of each machine may be found below.
-_Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdown_tables) to add/remove values from the table_.
 
-| Name     | Function | IP Address | Operating System |
-|----------|----------|------------|------------------|
-| Jump Box | Gateway  | 10.0.0.1   | Linux            |
-| TODO     |          |            |                  |
-| TODO     |          |            |                  |
-| TODO     |          |            |                  |
+
+|    Name    | IP Address |      Function     |   Operating Sistem   |
+|:----------:|:----------:|:-----------------:|:--------------------:|
+| Web1       | 10.0.0.8   | docker - DVWA     | linux (ubuntu 18.04) |
+| Web2       | 10.0.0.7   | docker - DVWA     | linux (ubuntu 18.04) |
+| Jump-box   | 10.0.0.4   | gateway - ansible | linux (ubuntu 18.04) |
+| ELK-server | 10.1.0.4   | ELK               | linux (ubuntu 18.04) |
 
 ### Access Policies
 
