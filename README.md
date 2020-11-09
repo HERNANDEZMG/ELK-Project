@@ -45,6 +45,7 @@ The configuration details of each machine may be found below.
 | Jump-box   | 10.0.0.4   | gateway - ansible | linux (ubuntu 18.04) |
 | ELK-server | 10.1.0.4   | ELK               | linux (ubuntu 18.04) |
 
+
 ### Access Policies
 
 The machines on the internal network are not exposed to the public Internet. 
@@ -64,6 +65,7 @@ A summary of the access policies in place can be found in the table below.
 | Web-2    |          no         | 10.0.0.4               |
 | ELK      |          no         | 10.0.0.4 & Personal IP |
 
+
 ### Elk Configuration
 
 Ansible was used to automate configuration of the ELK machine. No configuration was performed manually, which is advantageous because of the ease of use and the extremely easy learning curve. Through the use of Playbooks you are able to configure multiple Machines through the use of a single command after initial configuration.
@@ -80,15 +82,19 @@ The following screenshot displays the result of running `docker ps` after succes
 
 ![TODO: Update the path with the name of your screenshot of docker ps output](Images/Docker_ps_output.png)
 
+
 ### Target Machines & Beats
 This ELK server is configured to monitor the following machines:
-- _TODO: List the IP addresses of the machines you are monitoring_
+* [10.0.0.7 & 10.0.0.8]
 
 We have installed the following Beats on these machines:
-- _TODO: Specify which Beats you successfully installed_
+* Filebeat and Metricbeat
 
 These Beats allow us to collect the following information from each machine:
-- _TODO: In 1-2 sentences, explain what kind of data each beat collects, and provide 1 example of what you expect to see. E.g., `Winlogbeat` collects Windows logs, which we use to track user logon events, etc._
+* Filebeat is a lightweight shipper for forwarding and centralizing log data. Filebeat monitors log files or locations you specify, collects log events, and forwards them either to Elasticsearch or Logstash for indexing.
+
+* Metricbeat collects metrics from the operating system and from services running on the server. Metricbeat then takes the metrics and statistics that it collects and ships them to the output that you specify.
+
 
 ### Using the Playbook
 In order to use the playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned: 
