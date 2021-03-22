@@ -9,7 +9,7 @@ These files have been tested and used to generate a live ELK deployment on Azure
 * The ansible-playbooks [Elk.yml](Ansible-Playbooks/Install-ELK). and [filebeat.yml](Ansible-Playbooks/Filebeat.yml) are needed to create and implement the Elk-Server.
 
 This document contains the following details:
-* Description of the Topologu
+* Description of the Topology
 * Access Policies
 * ELK Configuration
 * Beats in Use
